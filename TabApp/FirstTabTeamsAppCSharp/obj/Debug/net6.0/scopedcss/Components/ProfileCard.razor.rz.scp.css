@@ -1,0 +1,28 @@
+.profile[b-d3k4u15o84] {
+    display: flex;
+    align-items: center;
+}
+
+    .profile .avatar[b-d3k4u15o84] {        
+        flex: 1 0 auto;
+    }
+
+    .profile .avatar img[b-d3k4u15o84] {
+        margin: 15px;
+        height: 64px;
+        width: 64px;
+        border-radius: 32px;
+    }
+
+    .profile .info[b-d3k4u15o84] {
+        margin: 0 2em;
+        flex: 4 0 auto;
+    }
+
+        .profile .info > h3[b-d3k4u15o84] {
+            margin: 0;
+        }
+
+        .profile .info > p[b-d3k4u15o84] {
+            margin: 0;
+        }

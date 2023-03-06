@@ -1,0 +1,16 @@
+﻿<div>
+    <h2>Get the current meeting Id</h2>
+    <p>Access basic information about the current meeting like this:</p>
+    <pre>var teamsMeeting = await MicrosoftTeams.GetTeamsContextAsync();</pre>
+    @if (!string.IsNullOrEmpty(MeetingId))
+    {
+        <p>
+            The current MeetingId is <b>@MeetingId</b>
+        </p>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public string MeetingId { get; set; }
+}

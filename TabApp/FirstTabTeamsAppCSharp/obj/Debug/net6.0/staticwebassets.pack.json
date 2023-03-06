@@ -1,0 +1,81 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\moam\\.nuget\\packages\\microsoft.teamsfx\\1.2.1\\contentFiles\\any\\net6.0\\wwwroot\\jsInterop.js",
+      "PackagePath": "staticwebassets\\jsInterop.js"
+    },
+    {
+      "Id": "C:\\Users\\moam\\TeamsApps\\TabApp\\FirstTabTeamsAppCSharp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FirstTabTeamsAppCSharp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\FirstTabTeamsAppCSharp.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\moam\\TeamsApps\\TabApp\\FirstTabTeamsAppCSharp\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\moam\\TeamsApps\\TabApp\\FirstTabTeamsAppCSharp\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\moam\\TeamsApps\\TabApp\\FirstTabTeamsAppCSharp\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\moam\\TeamsApps\\TabApp\\FirstTabTeamsAppCSharp\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\moam\\TeamsApps\\TabApp\\FirstTabTeamsAppCSharp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\moam\\TeamsApps\\TabApp\\FirstTabTeamsAppCSharp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\moam\\TeamsApps\\TabApp\\FirstTabTeamsAppCSharp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\moam\\TeamsApps\\TabApp\\FirstTabTeamsAppCSharp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\moam\\TeamsApps\\TabApp\\FirstTabTeamsAppCSharp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\moam\\TeamsApps\\TabApp\\FirstTabTeamsAppCSharp\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\moam\\TeamsApps\\TabApp\\FirstTabTeamsAppCSharp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\moam\\TeamsApps\\TabApp\\FirstTabTeamsAppCSharp\\wwwroot\\hello.png",
+      "PackagePath": "staticwebassets\\hello.png"
+    },
+    {
+      "Id": "C:\\Users\\moam\\TeamsApps\\TabApp\\FirstTabTeamsAppCSharp\\wwwroot\\js\\TeamsJsBlazorInterop.js",
+      "PackagePath": "staticwebassets\\js\\TeamsJsBlazorInterop.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.FirstTabTeamsAppCSharp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.FirstTabTeamsAppCSharp.props",
+      "PackagePath": "build\\FirstTabTeamsAppCSharp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.FirstTabTeamsAppCSharp.props",
+      "PackagePath": "buildMultiTargeting\\FirstTabTeamsAppCSharp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.FirstTabTeamsAppCSharp.props",
+      "PackagePath": "buildTransitive\\FirstTabTeamsAppCSharp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

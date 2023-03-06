@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "dgSpecHash": "8csEyiYXiHUxZ61VRRgKEgtbkzD7z8x3CW9t6cLVh4OhMzmVXAK25O+R1LYijgqESx/DHp8plS4ZTbG10cg15Q==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\mohammad.amer\\sources\\GraphDotNetHack\\TabApp\\FirstTabTeamsAppCSharp\\FirstTabTeamsAppCSharp.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.TeamsFx. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.TeamsFx",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.Fast.Components.FluentUI. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.Fast.Components.FluentUI",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.AspNetCore.Authentication.JwtBearer. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.AspNetCore.Authentication.JwtBearer",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.Graph. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.Graph",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

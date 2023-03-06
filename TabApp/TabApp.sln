@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstTabTeamsAppCSharp", "FirstTabTeamsAppCSharp\FirstTabTeamsAppCSharp.csproj", "{B039D15C-F51B-432B-9B54-493B7BF3F802}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B039D15C-F51B-432B-9B54-493B7BF3F802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B039D15C-F51B-432B-9B54-493B7BF3F802}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B039D15C-F51B-432B-9B54-493B7BF3F802}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B039D15C-F51B-432B-9B54-493B7BF3F802}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B039D15C-F51B-432B-9B54-493B7BF3F802}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B039D15C-F51B-432B-9B54-493B7BF3F802}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3DFE43D-9DD4-47E6-8E75-6A0A308BC587}
+	EndGlobalSection
+EndGlobal
