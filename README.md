@@ -44,7 +44,7 @@ This sample requires an Azure AD application registration:
 1. Select the **Grant admin consent for...** button, then select **Yes** to grant admin consent for the configured application permissions. The **Status** column in the **Configured permissions** table changes to **Granted for ...**.
 
 ## Configure the sample
-1. Create Self Signed Certificate using the Powershell script [Create-SelfSignedCertificate.ps1](/MSGraph.MeetingRecordingNotifier/MeetingRecordingNotifier/ScriptsCreate-SelfSignedCertificate.ps1)
+1. Create Self Signed Certificate using the Powershell script [Create-SelfSignedCertificate.ps1](MSGraph.MeetingRecordingNotifier/MeetingRecordingNotifier/Scripts/Create-SelfSignedCertificate.ps1)
 1. copy the the generated CertificateThumbprint. You will need it in the next step.
 
 1. Use `dotnet user-secrets init` and `dotnet user-secrets set` in the **MSGraph.MeetingRecordingNotifier** directory to set the following values.
@@ -61,7 +61,7 @@ This sample requires an Azure AD application registration:
     - dotnet user-secrets set --project "project path" "MessageSubject" "MessageSubjectValue"
 
 
-1. Run ngrok using the following command. (Only required if using the change notification webhook portion of the sample)
+1. Run ngrok using the following command.
 
     ```bash
     ngrok http 7071
