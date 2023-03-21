@@ -1,23 +1,17 @@
 #Requires -RunAsAdministrator
 <#
 .SYNOPSIS
-Creates a Self Signed Certificate
+Creates a Certificate
 .DESCRIPTION
 .EXAMPLE
 .\Create-SelfSignedCertificate.ps1
 #>
 
-param(
-   [Parameter(Mandatory=$true)][System.String]$CertificateName
-)
+$password = "<YourPasswordForTheCertificate>"
+$cert = New-SelfSignedCertificate -DnsName "<Name>" -CertStoreLocation "cert:\CurrentUser\My" -NotAfter (Get-Date).AddYears(1) -KeyAlgorithm RSA -KeyLength 2048
+$cert | Export-PfxCertificate -FilePath ".\Certs\<Name>.pfx"  -Password $(ConvertTo-SecureString -String $password -AsPlainText -Force)
+$cert | Export-Certificate -FilePath ".\Certs\<Name>.cer"
 
-$cert = New-SelfSignedCertificate -Type Custom -KeySpec Signature `
-   -Subject "CN=$($CertificateName)-Root" -KeyExportPolicy Exportable `
-   -HashAlgorithm sha256 -KeyLength 2048 `
-   -CertStoreLocation "Cert:\CurrentUser\My" -KeyUsageProperty Sign -KeyUsage CertSign
 
-New-SelfSignedCertificate -Type Custom -DnsName $($CertificateName) -KeySpec Signature `
-   -Subject "CN=$($CertificateName)" -KeyExportPolicy Exportable `
-   -HashAlgorithm sha256 -KeyLength 2048 `
-   -CertStoreLocation "Cert:\CurrentUser\My" `
-   -Signer $cert -TextExtension @("2.5.29.37={text}1.3.6.1.5.5.7.3.2")
+
+ 
