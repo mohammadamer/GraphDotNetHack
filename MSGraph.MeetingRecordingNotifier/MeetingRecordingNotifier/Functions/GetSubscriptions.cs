@@ -38,13 +38,6 @@ namespace MeetingRecordingNotifier.Functions
             var response = req.CreateResponse(HttpStatusCode.OK);
             try
             {
-                var payload = await req.ReadFromJsonAsync<SubscriptionPayload>();
-                if (payload == null)
-                {
-                    response = req.CreateResponse(HttpStatusCode.BadRequest);
-                    response.WriteString("Invalid request payload");
-                    return response;
-                }
                 var subscriptions = await graphClient.Subscriptions.Request().GetAsync();
                 await response.WriteAsJsonAsync(subscriptions);
             }
