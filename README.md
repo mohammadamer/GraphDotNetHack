@@ -2,6 +2,8 @@
 
 # Meeting Recording Notifier
 
+https://user-images.githubusercontent.com/19314043/227954837-09fda710-5461-48f3-ad69-b35d68c85ea2.mp4
+
 This sample demonstrates how to use the Microsoft Graph .NET SDK to get a notification email about the meeting recording URL.
 
 > **NOTE:** This sample is still has points to be imporved and it's for running locally.
