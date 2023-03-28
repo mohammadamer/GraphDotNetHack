@@ -51,9 +51,10 @@ namespace MeetingRecordingNotifier.Models
         /// For rich notificiations data in resourceData property. (Type: Dictionary{string, object}).
         /// </summary>
         //[JsonProperty(PropertyName = "resourceData")]
-#pragma warning disable CA2227 // Collection properties should be read only. Part of Data transfer object class.
+        #pragma warning disable CA2227 // Collection properties should be read only. Part of Data transfer object class.
         public Dictionary<string, object> ResourceData { get; set; }
-#pragma warning restore CA2227 // Collection properties should be read only. Part of Data transfer object class.
+        public Dictionary<string, object> AditionalData { get; set; }
+        #pragma warning restore CA2227 // Collection properties should be read only. Part of Data transfer object class.
 
         /// <summary>
         /// Gets or sets the Encrypted Notification Data.

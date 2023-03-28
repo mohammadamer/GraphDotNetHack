@@ -58,8 +58,6 @@ namespace MeetingRecordingNotifier.Functions
                 // Load the X509Certificate and add it to the subscription object
                 var certificate = Utilities.X509CertificateUtility.LoadCertificate(StoreName.My, StoreLocation.CurrentUser, certificateThumbprint);
                 var encryptionCertificateId = !string.IsNullOrEmpty(certificate?.FriendlyName) ? certificate.FriendlyName : certificate?.Subject;
-                var encryptionCertificate = Convert.ToBase64String(certificate.Export(X509ContentType.Cert));
-
 
                 // Create a new subscription object
                 var subscription = new Subscription
@@ -67,11 +65,11 @@ namespace MeetingRecordingNotifier.Functions
                     ChangeType = "created",
                     IncludeResourceData = true,
                     NotificationUrl = $"{notificationHost}/api/Notify",
-                    Resource = "/teams/getAllMessages",// all messages and replies across channels.
+                    //Resource = "/teams/getAllMessages",// all messages and replies across channels.
+                    Resource = "/chats/getAllMessages",//all messages across chats in a tenant.
                     ExpirationDateTime = DateTime.UtcNow.AddMinutes(60),
                     ClientState = ClientState,
                     EncryptionCertificateId = encryptionCertificateId,
-                    //EncryptionCertificate = encryptionCertificate,
                 };
                 subscription.AddPublicEncryptionCertificate(certificate);
 

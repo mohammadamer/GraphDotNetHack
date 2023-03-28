@@ -8,6 +8,8 @@ using Microsoft.Extensions.Configuration;
 using System.Security.Cryptography.X509Certificates;
 using MeetingRecordingNotifier.Mail;
 using System.Globalization;
+using MeetingRecordingNotifier.Models;
+using Newtonsoft.Json;
 
 namespace MeetingRecordingNotifier.Functions
 {
@@ -72,13 +74,37 @@ namespace MeetingRecordingNotifier.Functions
                         {
                             if (attachedMessage.MessageType == ChatMessageType.UnknownFutureValue)
                             {
-                                //Send mail
-                                var message = await _graphMail.CreateMessageDraft(_config["MessageSubject"], _config["MessageBody"], "user1.onmicrosoft.com", "user2.onmicrosoft.com");
-                                await _graphMail.SendMessage(message);
-                                _logger.LogInformation($"Message time: {attachedMessage.CreatedDateTime}");
-                                _logger.LogInformation($"Message from: {attachedMessage.From?.User?.DisplayName}");
-                                _logger.LogInformation($"Message content: {attachedMessage.Body.Content}");
-                                
+                                try
+                                {
+
+                                    var callRecordingMessageDetail = attachedMessage.AdditionalData;
+                                    foreach (var item in callRecordingMessageDetail)
+                                    {
+
+                                        if (item.Key == "eventDetail" && item.Value != null)
+                                        {
+                                            var eventDetails = $"{item.Value}";
+                                            var callRecordingdetails = JsonConvert.DeserializeObject<CallRecordingEventMessageDetailModel>(eventDetails);
+
+                                            //Send mail
+                                            if (callRecordingdetails?.CallRecordingStatus == "success")
+                                            {
+                                                var messageBody = String.Format(_config["MessageBody"], callRecordingdetails?.CallRecordingDisplayName, callRecordingdetails?.CallRecordingUrl);
+                                                var message = await _graphMail.CreateMessageDraft(_config["MessageSubject"], messageBody, "MiriamG@abc.onmicrosoft.com", "admin@abc.onmicrosoft.com");
+                                                await _graphMail.SendMessage(message);
+                                            }
+                                        }
+                                    }
+                                }
+                                //catch (ODataError odataError)
+                                catch (Exception ex)
+                                {
+                                    _logger.LogInformation($"Error while excuting the request, Error Code: {ex.InnerException}");
+                                    //_logger.LogInformation($"Error while excuting the request, Error Code: {odataError.Error.Code}");
+                                    //_logger.LogInformation($"Error while excuting the request, Error Message: {odataError.Error.Message}");
+                                    return req.CreateResponse(HttpStatusCode.BadRequest);
+                                    throw;
+                                }
                             }
                         }
                     }
