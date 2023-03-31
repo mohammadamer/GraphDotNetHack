@@ -39,7 +39,7 @@ This sample requires an Azure AD application registration:
 
 1. Select **API Permissions** under **Manage**. Choose **Add a permission**.
 
-1. Select **Microsoft Graph**, then **Application Permissions**. Add **User.Read.All** and **Mail.ReadWrite** and **Mail.send** and **ChannelMessage.Read.All**, then select **Add permissions**.
+1. Select **Microsoft Graph**, then **Application Permissions**. Add **User.Read.All** and **Mail.ReadWrite** and **Mail.send** and **Chat.Read.All** and **Chat.ReadWrite.All**, **ChatMessage.Read.All** then select **Add permissions**.
 
 1. In the **Configured permissions**, remove the delegated **User.Read** permission under **Microsoft Graph** by selecting the **...** to the right of the permission and selecting **Remove permission**. Select **Yes, remove** to confirm.
 
@@ -59,8 +59,7 @@ This sample requires an Azure AD application registration:
     - dotnet user-secrets set --project "project path" "CertificateThumbprint" "CertificateThumbprintValue"
     - dotnet user-secrets set --project "project path" "ClientState" "ClientStateValue"
     - dotnet user-secrets set --project "project path" "MessageSubject" "MessageSubjectValue"
-    - dotnet user-secrets set --project "project path" "MessageBody" "MessageBodyValue"
-    - dotnet user-secrets set --project "project path" "MessageSubject" "MessageSubjectValue"
+    - dotnet user-secrets set --project "project path" "MessageBody" ```"<p>Hello!</p><p><span> Please find the {0} meeting recording <a href=\"{1}\">URL.</a></span></p>"```
 
 
 1. Run ngrok using the following command.
